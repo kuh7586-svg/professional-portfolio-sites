@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "flows": {
+    "arch-detailing-restaurant": {
+      "plan": [
+        "07ee2add3c4f8e2a",
+        "188f901341e140af",
+        "34de4797d521c8e4",
+        "35fc0abca6ddc9bc",
+        "6656434f3bfedfc1",
+        "808500830d57b961",
+        "c7757f331bd1402b",
+        "cbf60ba10979ba69",
+        "d3910de9289aa60a",
+        "e0fe3efc2636dadd",
+        "e50dba08619f377c",
+        "eee797848386c3a2"
+      ],
+      "last": "passed"
+    },
+    "clinic-booking": {
+      "plan": [
+        "56ccb1549a48b239",
+        "5f382477cf2667df",
+        "607a2e1ec968baa9",
+        "7a95d24b280cc461"
+      ],
+      "last": "passed"
+    },
+    "clinic-doctors-filter": {
+      "plan": [
+        "34de4797d521c8e4",
+        "3ee8414b10f3d2fa",
+        "7509033b81447fc1",
+        "c7757f331bd1402b",
+        "d75a948196e97302"
+      ],
+      "last": "passed"
+    },
+    "jump-calculator": {
+      "plan": [
+        "259f5f0ad7992c63",
+        "333e5977038d17b8",
+        "34de4797d521c8e4",
+        "bcb6ddd9e35f641e",
+        "c74f842db6d8af1e",
+        "f8347733ce7b94e0"
+      ],
+      "last": "passed"
+    },
+    "music-toggle": {
+      "plan": [
+        "14d691d5e475ae0b",
+        "942b57da71070944",
+        "c8c0cf0588d296b4",
+        "ff0ae82d22d5eea5"
+      ],
+      "last": "passed"
+    },
+    "portfolio-to-demo-and-back": {
+      "plan": [
+        "0616e8a2528ca9fb",
+        "34de4797d521c8e4",
+        "35fc0abca6ddc9bc",
+        "3dcd4ede23c415c2",
+        "4477ce5c94c39590",
+        "a58038dcecc58481",
+        "ab9dc905c47e1be2",
+        "b7a93a8203e20d5c",
+        "bea3bc69a0750214",
+        "e5e46f6ba664a315",
+        "f6d54712db9966c5"
+      ],
+      "last": "passed"
+    }
+  },
+  "order": [
+    "portfolio-to-demo-and-back",
+    "music-toggle",
+    "clinic-booking",
+    "clinic-doctors-filter",
+    "jump-calculator",
+    "arch-detailing-restaurant"
+  ]
+}

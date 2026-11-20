@@ -1,0 +1,126 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:44:32.493Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"Анна Смирнова\" into textbox \"Имя\" in \"Как с вами связаться\"",
+        "target": {
+          "role": "textbox",
+          "name": "Имя",
+          "placeholder": "Мария",
+          "within": "Как с вами связаться"
+        },
+        "value": "Анна Смирнова"
+      },
+      {
+        "name": "type",
+        "summary": "type \"+7 900 123-45-67\" into textbox \"Телефон\" in \"Как с вами связаться\"",
+        "target": {
+          "role": "textbox",
+          "name": "Телефон",
+          "placeholder": "+7 921 555-12-34",
+          "within": "Как с вами связаться"
+        },
+        "value": "+7 900 123-45-67"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Подтвердить запись\"",
+        "target": {
+          "role": "button",
+          "name": "Подтвердить запись"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "clinic-booking.e2e.ts::clinic-booking",
+      "targetId": "web",
+      "instructionDigest": "809ea1df0f0e253b932d5e296aa9e14803e68ef5f2f7afe57487af0152789b1c",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "Entered name Анна Смирнова and phone +7 900 123-45-67, pressed Подтвердить запись. Confirmation shows \"Анна Смирнова, вы записаны\", doctor Анна Смирнова, терапевт, понедельник, 23 ноября, 09:00, от 2 400 ₽.",
+    "startPath": "/work/clinic/booking",
+    "endPath": "/work/clinic/booking",
+    "endAnchors": [
+      {
+        "role": "heading",
+        "name": "Анна Смирнова, вы записаны"
+      },
+      {
+        "text": "Администратор позвонит на +7 900 123-45-67 в течение часа, чтобы подтвердить визит."
+      },
+      {
+        "text": "Врач"
+      },
+      {
+        "text": "Анна Смирнова, терапевт"
+      },
+      {
+        "text": "Когда"
+      },
+      {
+        "text": "Где"
+      },
+      {
+        "text": "Стоимость"
+      },
+      {
+        "text": "от 2 400 ₽, оплата после приёма"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "alert",
+        "name": "Введите имя — так врач будет к вам обращаться"
+      },
+      {
+        "role": "alert",
+        "name": "Введите номер телефона — по нему администратор подтвердит запись"
+      },
+      {
+        "role": "heading",
+        "name": "Запись на приём"
+      },
+      {
+        "text": "✓"
+      },
+      {
+        "text": "Как с вами связаться"
+      },
+      {
+        "text": "Имя"
+      },
+      {
+        "role": "textbox",
+        "name": "Имя",
+        "placeholder": "Мария"
+      },
+      {
+        "text": "Телефон"
+      }
+    ],
+    "endWaitMs": 13234,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

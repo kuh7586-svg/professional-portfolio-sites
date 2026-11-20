@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:36:52.831Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Взрослые: больше\"",
+        "target": {
+          "role": "button",
+          "name": "Взрослые: больше"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "jump-calculator.e2e.ts::jump-calculator",
+      "targetId": "web",
+      "instructionDigest": "8d72deb7a1781d242017cd84c57f80229d2806661ff0bf17e2384cd0e78af2ea",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "Adults increased from 1 to 2. The calculator total now reads Итого: 2 960 ₽ (2 дет. × 690 ₽ + 2 взр. × 790 ₽, 60 минут, будни).",
+    "startPath": "/work/jump",
+    "endPath": "/work/jump",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "Взрослые",
+        "text": "2"
+      },
+      {
+        "text": "Итого: 2 960 ₽"
+      },
+      {
+        "text": "2 дет. × 690 ₽ + 2 взр. × 790 ₽, 60 минут, будни."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "Взрослые",
+        "text": "1"
+      },
+      {
+        "text": "Итого: 2 170 ₽"
+      },
+      {
+        "text": "2 дет. × 690 ₽ + 1 взр. × 790 ₽, 60 минут, будни."
+      }
+    ],
+    "endWaitMs": 13684,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

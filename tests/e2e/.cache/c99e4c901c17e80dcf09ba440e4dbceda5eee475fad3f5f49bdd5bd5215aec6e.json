@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:35:26.264Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Терапевт от 2 400 ₽\" in \"К какому специалисту?\"",
+        "target": {
+          "role": "button",
+          "name": "Терапевт от 2 400 ₽",
+          "within": "К какому специалисту?"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Далее\"",
+        "target": {
+          "role": "button",
+          "name": "Далее"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "clinic-booking.e2e.ts::clinic-booking",
+      "targetId": "web",
+      "instructionDigest": "7cb989c693c21d8b6faf9bff79c288e8c9070e3a9a2bc850237588d985938128",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I chose Терапевт and pressed Далее. The doctor step \"Терапевт: кого выберете?\" is now open and lists Анна Смирнова first, then Игорь Орлов. The Специальность step now shows a check mark.",
+    "startPath": "/work/clinic/booking",
+    "endPath": "/work/clinic/booking",
+    "endAnchors": [
+      {
+        "text": "✓"
+      },
+      {
+        "text": "Терапевт: кого выберете?"
+      },
+      {
+        "text": "Анна Смирнова"
+      },
+      {
+        "text": "стаж 14 лет · Высшая категория"
+      },
+      {
+        "text": "Игорь Орлов"
+      },
+      {
+        "text": "стаж 8 лет · Первая категория"
+      },
+      {
+        "role": "button",
+        "name": "Назад"
+      },
+      {
+        "role": "listitem",
+        "name": "✓ Специальность"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "К какому специалисту?"
+      },
+      {
+        "text": "Терапевт"
+      },
+      {
+        "text": "от 2 400 ₽"
+      },
+      {
+        "text": "Кардиолог"
+      },
+      {
+        "text": "от 3 200 ₽"
+      },
+      {
+        "text": "Невролог"
+      },
+      {
+        "text": "от 3 100 ₽"
+      },
+      {
+        "text": "Педиатр"
+      }
+    ],
+    "endWaitMs": 14877,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

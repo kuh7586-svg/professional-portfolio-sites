@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "portfolio-to-demo-and-back",
+    "kind": "interactive",
+    "goal": "Open the portfolio, browse the five works, open a demo site and return",
+    "requirementIndexes": [
+      0,
+      1,
+      2,
+      5,
+      27,
+      28,
+      31
+    ],
+    "acceptanceCriteriaIndexes": [
+      0,
+      1,
+      2,
+      9
+    ],
+    "steps": [
+      "Press Смотреть пять работ",
+      "Open the Поликлиника work",
+      "Press ← в портфолио"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "Поликлиника"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "Ресторан"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "hello@vetrov.studio"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "← в портфолио"
+      },
+      {
+        "afterStep": 1,
+        "assert": "A 3D model is visible in the background of the first screen and headlines fit inside the screen width"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "Сайты на ощупь"
+      }
+    ]
+  }
+}

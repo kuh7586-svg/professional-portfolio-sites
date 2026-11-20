@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:44:32.488Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Анна Смирнова стаж 14 лет · Высшая кате…\" in \"Терапевт: кого выберете?\"",
+        "target": {
+          "role": "button",
+          "name": "Анна Смирнова стаж 14 лет · Высшая категория",
+          "within": "Терапевт: кого выберете?"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Далее\"",
+        "target": {
+          "role": "button",
+          "name": "Далее"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "clinic-booking.e2e.ts::clinic-booking",
+      "targetId": "web",
+      "instructionDigest": "ba3b83e606275740172d1c133d3345516f5967851f820d90b1f4ac0a554bbdfc",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I chose the first doctor, Анна Смирнова, and pressed Далее. The \"Свободное время · Анна Смирнова\" step is open with пн 23 нояб. selected, and its first free slot is 09:00. The Врач step now shows a check mark.",
+    "startPath": "/work/clinic/booking",
+    "endPath": "/work/clinic/booking",
+    "endAnchors": [
+      {
+        "text": "Свободное время · Анна Смирнова"
+      },
+      {
+        "text": "пн"
+      },
+      {
+        "text": "23 нояб."
+      },
+      {
+        "text": "ср"
+      },
+      {
+        "text": "25 нояб."
+      },
+      {
+        "text": "пт"
+      },
+      {
+        "text": "27 нояб."
+      },
+      {
+        "text": "30 нояб."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Терапевт: кого выберете?"
+      },
+      {
+        "text": "Анна Смирнова"
+      },
+      {
+        "text": "стаж 14 лет · Высшая категория"
+      },
+      {
+        "text": "Игорь Орлов"
+      },
+      {
+        "text": "стаж 8 лет · Первая категория"
+      },
+      {
+        "role": "listitem",
+        "name": "02 Врач"
+      },
+      {
+        "role": "button",
+        "name": "02 Врач",
+        "text": "Врач"
+      },
+      {
+        "role": "group",
+        "name": "Терапевт: кого выберете?"
+      }
+    ],
+    "endWaitMs": 15949,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

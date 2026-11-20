@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:38:44.683Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"в портфолио\"",
+        "target": {
+          "role": "link",
+          "name": "в портфолио"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "arch-detailing-restaurant.e2e.ts::arch-detailing-restaurant",
+      "targetId": "web",
+      "instructionDigest": "b7186f8faefdca70e74161d14651fdc1e2322703c8c46f4139d8d6b3433f0ea6",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I pressed «← в портфолио» and it took me to the portfolio home page at /. The page shows the «Пять работ» list, and «Детейлинг «Графит»» (/work/detailing) is the 4th work in it.",
+    "startPath": "/work/architecture/dom-na-sklone",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "Алексей Ветров"
+      },
+      {
+        "role": "link",
+        "name": "Работы"
+      },
+      {
+        "role": "link",
+        "name": "Обо мне"
+      },
+      {
+        "role": "link",
+        "name": "Контакты"
+      },
+      {
+        "role": "heading",
+        "name": "Сайты на ощупь"
+      },
+      {
+        "text": "Скульптура справа поворачивается за вашим курсором. Так же отзываются и мои сайты: клиника, батуты, бюро, детейлинг и ресторан — ниже."
+      },
+      {
+        "role": "link",
+        "name": "Обсудить проект"
+      },
+      {
+        "role": "link",
+        "name": "Смотреть пять работ ↓"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "в портфолио"
+      },
+      {
+        "role": "link",
+        "name": "Отвес"
+      },
+      {
+        "role": "link",
+        "name": "Проекты"
+      },
+      {
+        "role": "link",
+        "name": "Метод"
+      },
+      {
+        "role": "link",
+        "name": "Заявка"
+      },
+      {
+        "text": "Все проекты"
+      },
+      {
+        "text": "01 · Жилое"
+      },
+      {
+        "role": "heading",
+        "name": "Дом на склоне"
+      }
+    ],
+    "endWaitMs": 15749,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

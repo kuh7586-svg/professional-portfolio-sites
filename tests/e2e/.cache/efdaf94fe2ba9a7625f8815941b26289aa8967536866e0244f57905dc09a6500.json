@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:38:44.682Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"Дом на склоне, Красная Поляна Дом на ск…\" in \"Дом на склоне\"",
+        "target": {
+          "role": "link",
+          "name": "Дом на склоне, Красная Поляна Дом на склоне Жилое · Красная Поляна 2024 / 412 м²",
+          "within": "Дом на склоне"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "arch-detailing-restaurant.e2e.ts::arch-detailing-restaurant",
+      "targetId": "web",
+      "instructionDigest": "034b26ac670e0190deccdd160e6721da2f842bdd9228f9b38872f0b709d98a3f",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I opened the first project, «Дом на склоне». Its page is showing at /work/architecture/dom-na-sklone with the heading «Дом на склоне» and the label «01 · Жилое». The «в портфолио» link is still in the header.",
+    "startPath": "/work/architecture",
+    "endPath": "/work/architecture/dom-na-sklone",
+    "endAnchors": [
+      {
+        "text": "Все проекты"
+      },
+      {
+        "text": "01 · Жилое"
+      },
+      {
+        "role": "image",
+        "name": "Дом на склоне, Красная Поляна, 2024"
+      },
+      {
+        "text": "Площадь"
+      },
+      {
+        "text": "412 м²"
+      },
+      {
+        "text": "Год"
+      },
+      {
+        "text": "Город"
+      },
+      {
+        "text": "Красная Поляна"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Архитектурное бюро · Москва · с 2011"
+      },
+      {
+        "role": "heading",
+        "name": "Строим тишину из камня и света"
+      },
+      {
+        "text": "Проектируем частные дома, библиотеки и интерьеры. Ведём объект от обмеров участка до последнего шва кладки."
+      },
+      {
+        "text": "построенных объектов"
+      },
+      {
+        "text": "побед в конкурсах"
+      },
+      {
+        "text": "лет практики"
+      },
+      {
+        "text": "Избранное · 2022—2025"
+      },
+      {
+        "role": "heading",
+        "name": "Проекты"
+      }
+    ],
+    "endWaitMs": 12916,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:36:52.833Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap node \"Выходные\" in \"Когда\"",
+        "target": {
+          "text": "Выходные",
+          "within": "Когда"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "jump-calculator.e2e.ts::jump-calculator",
+      "targetId": "web",
+      "instructionDigest": "7d65f6c1c6c5c92487e064cf01b040c8c360adb48b61663a3fcb6755839e5b42",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "Switched to Выходные. The total is now Итого: 3 600 ₽ (2 дет. × 850 ₽ + 2 взр. × 950 ₽, 60 минут, выходные).",
+    "startPath": "/work/jump",
+    "endPath": "/work/jump",
+    "endAnchors": [
+      {
+        "text": "до 14 лет · 850 ₽"
+      },
+      {
+        "text": "которые тоже прыгают · 950 ₽"
+      },
+      {
+        "role": "radio",
+        "name": "Будни"
+      },
+      {
+        "role": "radio",
+        "name": "Выходные",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Итого: 3 600 ₽"
+      },
+      {
+        "text": "2 дет. × 850 ₽ + 2 взр. × 950 ₽, 60 минут, выходные."
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "до 14 лет · 690 ₽"
+      },
+      {
+        "text": "которые тоже прыгают · 790 ₽"
+      },
+      {
+        "role": "radio",
+        "name": "Будни",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "role": "radio",
+        "name": "Выходные"
+      },
+      {
+        "text": "Итого: 2 960 ₽"
+      },
+      {
+        "text": "2 дет. × 690 ₽ + 2 взр. × 790 ₽, 60 минут, будни."
+      }
+    ],
+    "endWaitMs": 13174,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

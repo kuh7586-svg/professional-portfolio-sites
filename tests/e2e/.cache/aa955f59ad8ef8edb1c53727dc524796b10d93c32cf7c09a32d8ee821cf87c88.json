@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:35:53.697Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Закрыть\" in \"Фото врача\"",
+        "target": {
+          "role": "button",
+          "name": "Закрыть",
+          "within": "Фото врача"
+        }
+      },
+      {
+        "name": "tap",
+        "summary": "tap link \"Услуги и цены\"",
+        "target": {
+          "role": "link",
+          "name": "Услуги и цены"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "clinic-doctors-filter.e2e.ts::clinic-doctors-filter",
+      "targetId": "web",
+      "instructionDigest": "f7f53dda6eb7ece6e893e58801d797447866fb89a9b52e69a1b0935f55a42e17",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "Closed the doctor dialog and tapped the \"Услуги и цены\" nav link. Now on /work/clinic/prices with heading \"Услуги и цены\"; the \"Приём врача\" tab is selected, and its rows include \"Кардиолог, первичный приём 40 мин 3 200 ₽\".",
+    "startPath": "/work/clinic/doctors",
+    "endPath": "/work/clinic/prices",
+    "endAnchors": [
+      {
+        "text": "в портфолио"
+      },
+      {
+        "role": "link",
+        "name": "Тихий пульс"
+      },
+      {
+        "role": "link",
+        "name": "Главная"
+      },
+      {
+        "role": "link",
+        "name": "Врачи"
+      },
+      {
+        "role": "link",
+        "name": "Услуги и цены"
+      },
+      {
+        "role": "link",
+        "name": "Запись"
+      },
+      {
+        "role": "link",
+        "name": "+7 (812) 000-00-00"
+      },
+      {
+        "text": "Музыка"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "Фото врача"
+      },
+      {
+        "text": "Кардиолог"
+      },
+      {
+        "role": "heading",
+        "name": "Марина Белова"
+      },
+      {
+        "role": "button",
+        "name": "Закрыть"
+      },
+      {
+        "text": "Стаж 21 год · Кандидат медицинских наук"
+      },
+      {
+        "text": "Двадцать лет в кардиологии, из них десять — в отделении Мариинской больницы. Подбирает терапию при гипертонии без лишних таблеток."
+      },
+      {
+        "text": "Расписание на неделю"
+      },
+      {
+        "text": "Пн"
+      }
+    ],
+    "endWaitMs": 13422,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

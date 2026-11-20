@@ -1,0 +1,109 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:38:44.689Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap tab \"Десерты\" in \"Меню · осень 2026\"",
+        "target": {
+          "role": "tab",
+          "name": "Десерты",
+          "within": "Меню · осень 2026"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "arch-detailing-restaurant.e2e.ts::arch-detailing-restaurant",
+      "targetId": "web",
+      "instructionDigest": "93ce07a41c1920e89a78488cd673ce40b764a809579b56a66b631d3c916ea63f",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I opened the Десерты tab, and it now shows as selected. Its panel lists «Пахлава с шафраном» (520 ₽), «Медовик на гречишном мёде», «Груша в красном вине» and «Сырники из печи».",
+    "startPath": "/work/restaurant",
+    "endPath": "/work/restaurant",
+    "endAnchors": [
+      {
+        "role": "tab",
+        "name": "Закуски"
+      },
+      {
+        "role": "tab",
+        "name": "Десерты",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "text": "Сладкое без лишнего сахара"
+      },
+      {
+        "text": "Пахлава с шафраном"
+      },
+      {
+        "text": "520 ₽"
+      },
+      {
+        "text": "Тонкое тесто, фундук, мёд с горных пасек Дагестана"
+      },
+      {
+        "text": "120 г"
+      },
+      {
+        "text": "Медовик на гречишном мёде"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "tab",
+        "name": "Закуски",
+        "states": [
+          "selected"
+        ]
+      },
+      {
+        "role": "tab",
+        "name": "Десерты"
+      },
+      {
+        "text": "Подаём, пока вы выбираете вино"
+      },
+      {
+        "text": "Тартар из оленины"
+      },
+      {
+        "text": "890 ₽"
+      },
+      {
+        "text": "Каперсы, копчёный желток, хрустящий бородинский хлеб"
+      },
+      {
+        "text": "160 г"
+      },
+      {
+        "text": "Пхали из трёх зелёных"
+      }
+    ],
+    "endWaitMs": 17360,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

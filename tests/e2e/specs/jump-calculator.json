@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "jump-calculator",
+    "kind": "interactive",
+    "goal": "Change the trampoline ticket calculator inputs and see the total update",
+    "requirementIndexes": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "acceptanceCriteriaIndexes": [
+      4,
+      2
+    ],
+    "startPath": "/work/jump",
+    "steps": [
+      "Increase the number of adults by one in the ticket calculator",
+      "Switch the calculator to Выходные",
+      "Choose 120 minutes in the calculator"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "Итого"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Выходные"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "120"
+      }
+    ]
+  }
+}

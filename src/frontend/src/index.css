@@ -1,0 +1,549 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ───────── Bundled fallbacks (local) ───────── */
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/assets/fonts/JetBrainsMono.woff2") format("woff2");
+  font-weight: 100 800;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lora";
+  src: url("/assets/fonts/Lora.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+/* ───────── Cyrillic families (Fontsource via jsDelivr, cyrillic + latin subsets) ───────── */
+/* Portfolio: Unbounded + Manrope */
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/unbounded@5/files/unbounded-cyrillic-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Unbounded";
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/unbounded@5/files/unbounded-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/manrope@5/files/manrope-cyrillic-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Manrope";
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/manrope@5/files/manrope-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Clinic: PT Serif + Golos Text */
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource/pt-serif@5/files/pt-serif-cyrillic-400-normal.woff2")
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource/pt-serif@5/files/pt-serif-cyrillic-700-normal.woff2")
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource/pt-serif@5/files/pt-serif-cyrillic-400-italic.woff2")
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource/pt-serif@5/files/pt-serif-latin-400-normal.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+@font-face {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource/pt-serif@5/files/pt-serif-latin-700-normal.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+@font-face {
+  font-family: "Golos Text";
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/golos-text@5/files/golos-text-cyrillic-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Golos Text";
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/golos-text@5/files/golos-text-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+
+/* Trampoline: Dela Gothic One + Nunito */
+@font-face {
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource/dela-gothic-one@5/files/dela-gothic-one-cyrillic-400-normal.woff2")
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource/dela-gothic-one@5/files/dela-gothic-one-latin-400-normal.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+@font-face {
+  font-family: "Nunito";
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/nunito@5/files/nunito-cyrillic-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Nunito";
+  font-weight: 200 1000;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/nunito@5/files/nunito-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+
+/* Architecture: Cormorant + Onest */
+@font-face {
+  font-family: "Cormorant";
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/cormorant@5/files/cormorant-cyrillic-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Cormorant";
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/cormorant@5/files/cormorant-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+@font-face {
+  font-family: "Onest";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/onest@5/files/onest-cyrillic-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Onest";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/onest@5/files/onest-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+
+/* Detailing: Oswald + Commissioner */
+@font-face {
+  font-family: "Oswald";
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/oswald@5/files/oswald-cyrillic-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/oswald@5/files/oswald-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+@font-face {
+  font-family: "Commissioner";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/commissioner@5/files/commissioner-cyrillic-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Commissioner";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/commissioner@5/files/commissioner-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+
+/* Restaurant: Prata + Raleway */
+@font-face {
+  font-family: "Prata";
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource/prata@5/files/prata-cyrillic-400-normal.woff2")
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Prata";
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource/prata@5/files/prata-latin-400-normal.woff2")
+    format("woff2");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/raleway@5/files/raleway-cyrillic-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Raleway";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@fontsource-variable/raleway@5/files/raleway-latin-wght-normal.woff2")
+    format("woff2-variations");
+  unicode-range: U+0000-00FF, U+2000-206F, U+20AC, U+2122, U+2212;
+}
+
+@layer base {
+  /* Portfolio (default, dark-first). Hex: bg #111312 · text #ECE8E1 · line #2B2F2D · muted #8A8F8A · accent #C2D0A8 */
+  :root,
+  .dark,
+  .theme-portfolio {
+    --font-display: "Unbounded", "Lora", serif;
+    --font-body: "Manrope", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    --radius: 0rem;
+
+    --background: 0.183 0.004 165;
+    --foreground: 0.931 0.01 80;
+    --card: 0.183 0.004 165;
+    --card-foreground: 0.931 0.01 80;
+    --popover: 0.183 0.004 165;
+    --popover-foreground: 0.931 0.01 80;
+
+    --primary: 0.836 0.054 125;
+    --primary-foreground: 0.183 0.004 165;
+    --secondary: 0.3 0.007 160;
+    --secondary-foreground: 0.931 0.01 80;
+    --muted: 0.3 0.007 160;
+    --muted-foreground: 0.638 0.008 145;
+    --accent: 0.836 0.054 125;
+    --accent-foreground: 0.183 0.004 165;
+
+    --destructive: 0.62 0.13 28;
+    --destructive-foreground: 0.931 0.01 80;
+    --success: 0.836 0.054 125;
+    --warning: 0.78 0.09 85;
+
+    --border: 0.3 0.007 160;
+    --input: 0.3 0.007 160;
+    --ring: 0.836 0.054 125;
+
+    --chart-1: 0.836 0.054 125;
+    --chart-2: 0.931 0.01 80;
+    --chart-3: 0.638 0.008 145;
+    --chart-4: 0.3 0.007 160;
+    --chart-5: 0.5 0.03 125;
+
+    --sidebar: 0.183 0.004 165;
+    --sidebar-foreground: 0.931 0.01 80;
+    --sidebar-primary: 0.836 0.054 125;
+    --sidebar-primary-foreground: 0.183 0.004 165;
+    --sidebar-accent: 0.3 0.007 160;
+    --sidebar-accent-foreground: 0.931 0.01 80;
+    --sidebar-border: 0.3 0.007 160;
+    --sidebar-ring: 0.836 0.054 125;
+
+    --site-line: 0.3 0.007 160;
+    --site-ink-2: 0.638 0.008 145;
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+    --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* Клиника «Тихий пульс». Hex: bg #F1EFEA · ink #22262A · muted #6E716F · line #D8D4CC · surface #E6E1D8 · accent #9E3B3B */
+  .theme-clinic {
+    --font-display: "PT Serif", "Lora", serif;
+    --font-body: "Golos Text", system-ui, sans-serif;
+    --radius: 0.375rem;
+    --background: 0.95 0.007 85;
+    --foreground: 0.262 0.01 250;
+    --card: 0.903 0.012 80;
+    --card-foreground: 0.262 0.01 250;
+    --popover: 0.95 0.007 85;
+    --popover-foreground: 0.262 0.01 250;
+    --primary: 0.5 0.13 22;
+    --primary-foreground: 0.97 0.005 85;
+    --secondary: 0.903 0.012 80;
+    --secondary-foreground: 0.262 0.01 250;
+    --muted: 0.903 0.012 80;
+    --muted-foreground: 0.535 0.004 160;
+    --accent: 0.5 0.13 22;
+    --accent-foreground: 0.97 0.005 85;
+    --border: 0.865 0.01 80;
+    --input: 0.865 0.01 80;
+    --ring: 0.5 0.13 22;
+    --site-line: 0.865 0.01 80;
+    --site-ink-2: 0.535 0.004 160;
+  }
+
+  /* Батутный центр «Прыг». Hex: bg #EFE9DD · ink #1C1C1A · accent #E0623A · deep #2F5D5A · line #D6CDBD · muted #6B655C */
+  .theme-jump {
+    --font-display: "Dela Gothic One", "Unbounded", sans-serif;
+    --font-body: "Nunito", system-ui, sans-serif;
+    --radius: 1.5rem;
+    --background: 0.933 0.016 85;
+    --foreground: 0.217 0.003 110;
+    --card: 0.437 0.054 188;
+    --card-foreground: 0.933 0.016 85;
+    --popover: 0.933 0.016 85;
+    --popover-foreground: 0.217 0.003 110;
+    --primary: 0.654 0.16 38;
+    --primary-foreground: 0.217 0.003 110;
+    --secondary: 0.437 0.054 188;
+    --secondary-foreground: 0.933 0.016 85;
+    --muted: 0.849 0.02 80;
+    --muted-foreground: 0.5 0.015 75;
+    --accent: 0.654 0.16 38;
+    --accent-foreground: 0.217 0.003 110;
+    --border: 0.849 0.02 80;
+    --input: 0.849 0.02 80;
+    --ring: 0.654 0.16 38;
+    --site-line: 0.849 0.02 80;
+    --site-ink-2: 0.5 0.015 75;
+  }
+
+  /* Архбюро «Отвес». Hex: bg #F4F4F1 · ink #0E0E0E · muted #777773 · line #D9D9D4 · surface #E9E9E5 */
+  .theme-arch {
+    --font-display: "Cormorant", "Lora", serif;
+    --font-body: "Onest", system-ui, sans-serif;
+    --radius: 0rem;
+    --background: 0.965 0.004 105;
+    --foreground: 0.159 0 0;
+    --card: 0.928 0.004 105;
+    --card-foreground: 0.159 0 0;
+    --popover: 0.965 0.004 105;
+    --popover-foreground: 0.159 0 0;
+    --primary: 0.159 0 0;
+    --primary-foreground: 0.965 0.004 105;
+    --secondary: 0.928 0.004 105;
+    --secondary-foreground: 0.159 0 0;
+    --muted: 0.928 0.004 105;
+    --muted-foreground: 0.555 0.004 105;
+    --accent: 0.159 0 0;
+    --accent-foreground: 0.965 0.004 105;
+    --border: 0.877 0.005 105;
+    --input: 0.877 0.005 105;
+    --ring: 0.159 0 0;
+    --site-line: 0.877 0.005 105;
+    --site-ink-2: 0.555 0.004 105;
+  }
+
+  /* Детейлинг «Графит». Hex: bg #0B0C0E · surface #16181B · text #E6E6E3 · muted #7D8086 · line #26292D · accent #C9733A */
+  .theme-detail {
+    --font-display: "Oswald", "Unbounded", sans-serif;
+    --font-body: "Commissioner", system-ui, sans-serif;
+    --radius: 0.125rem;
+    --background: 0.15 0.004 265;
+    --foreground: 0.919 0.003 105;
+    --card: 0.205 0.006 260;
+    --card-foreground: 0.919 0.003 105;
+    --popover: 0.205 0.006 260;
+    --popover-foreground: 0.919 0.003 105;
+    --primary: 0.64 0.13 52;
+    --primary-foreground: 0.15 0.004 265;
+    --secondary: 0.205 0.006 260;
+    --secondary-foreground: 0.919 0.003 105;
+    --muted: 0.205 0.006 260;
+    --muted-foreground: 0.603 0.01 265;
+    --accent: 0.64 0.13 52;
+    --accent-foreground: 0.15 0.004 265;
+    --border: 0.275 0.008 260;
+    --input: 0.275 0.008 260;
+    --ring: 0.64 0.13 52;
+    --site-line: 0.275 0.008 260;
+    --site-ink-2: 0.603 0.01 265;
+  }
+
+  /* Ресторан «Шафран». Hex: bg #1E1416 · text #EFE3D3 · muted #A08C80 · line #3A2A2C · accent #D4A23A · wine #5C1F2B */
+  .theme-resto {
+    --font-display: "Prata", "Lora", serif;
+    --font-body: "Raleway", system-ui, sans-serif;
+    --radius: 0rem;
+    --background: 0.195 0.014 5;
+    --foreground: 0.917 0.022 75;
+    --card: 0.335 0.09 10;
+    --card-foreground: 0.917 0.022 75;
+    --popover: 0.195 0.014 5;
+    --popover-foreground: 0.917 0.022 75;
+    --primary: 0.744 0.13 80;
+    --primary-foreground: 0.195 0.014 5;
+    --secondary: 0.335 0.09 10;
+    --secondary-foreground: 0.917 0.022 75;
+    --muted: 0.29 0.02 5;
+    --muted-foreground: 0.649 0.025 55;
+    --accent: 0.744 0.13 80;
+    --accent-foreground: 0.195 0.014 5;
+    --border: 0.29 0.02 5;
+    --input: 0.29 0.02 5;
+    --ring: 0.744 0.13 80;
+    --site-line: 0.29 0.02 5;
+    --site-ink-2: 0.649 0.025 55;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "kern", "liga";
+  }
+  .theme-portfolio,
+  .theme-clinic,
+  .theme-jump,
+  .theme-arch,
+  .theme-detail,
+  .theme-resto {
+    @apply bg-background text-foreground font-body;
+  }
+  ::selection {
+    background: oklch(var(--primary));
+    color: oklch(var(--primary-foreground));
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  .ease-out-expo {
+    transition-timing-function: var(--ease-out-expo);
+  }
+  .ease-in-out-quart {
+    transition-timing-function: var(--ease-in-out-quart);
+  }
+  .border-hairline {
+    border-color: oklch(var(--site-line));
+  }
+  .text-ink-2 {
+    color: oklch(var(--site-ink-2));
+  }
+  /* Film grain over the whole viewport (pointer-events none, fixed) */
+  .grain::after {
+    content: "";
+    position: fixed;
+    inset: -50%;
+    pointer-events: none;
+    z-index: 60;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    animation: grain 1.2s steps(6) infinite;
+  }
+  /* Underline that draws from left on hover */
+  .link-draw {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.6s var(--ease-out-expo);
+  }
+  .link-draw:hover,
+  .link-draw:focus-visible {
+    background-size: 100% 1px;
+  }
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px oklch(var(--foreground));
+  }
+  .clip-hidden {
+    clip-path: inset(0 0 100% 0);
+  }
+  .clip-shown {
+    clip-path: inset(0 0 0 0);
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .cursor-custom,
+    .cursor-custom * {
+      cursor: none;
+    }
+  }
+  @keyframes grain {
+    0% {
+      transform: translate(0, 0);
+    }
+    20% {
+      transform: translate(-3%, 2%);
+    }
+    40% {
+      transform: translate(2%, -4%);
+    }
+    60% {
+      transform: translate(-4%, -1%);
+    }
+    80% {
+      transform: translate(3%, 3%);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+}

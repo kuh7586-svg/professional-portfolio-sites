@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:38:44.685Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"Детейлинг «Графит» — Детейлинг-центр · …\" in \"04\"",
+        "target": {
+          "role": "link",
+          "name": "Детейлинг «Графит» — Детейлинг-центр · услуги и запись. Открыть демо",
+          "within": "04"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "arch-detailing-restaurant.e2e.ts::arch-detailing-restaurant",
+      "targetId": "web",
+      "instructionDigest": "124f45b09c0ea53df901d83f0b54164673e010bc66a27fcc5581a1e233dfcb23",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I opened the Детейлинг «Графит» work, and its page is showing at /work/detailing. The service builder shows the «01 — Класс автомобиля» group with Седан selected, Кроссовер, and the «Внедорожник» radio option. The total reads 46 500 ₽.",
+    "startPath": "/",
+    "endPath": "/work/detailing",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "46 500 ₽, 21 ч"
+      },
+      {
+        "text": "в портфолио"
+      },
+      {
+        "text": "Графит"
+      },
+      {
+        "role": "link",
+        "name": "Расчёт"
+      },
+      {
+        "role": "link",
+        "name": "До / после"
+      },
+      {
+        "role": "link",
+        "name": "Запись"
+      },
+      {
+        "text": "Детейлинг-ателье · Москва, Электрозаводская, 21"
+      },
+      {
+        "role": "heading",
+        "name": "Лак как в день выдачи из салона"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "link",
+        "name": "Алексей Ветров"
+      },
+      {
+        "role": "link",
+        "name": "Работы"
+      },
+      {
+        "role": "link",
+        "name": "Обо мне"
+      },
+      {
+        "role": "link",
+        "name": "Контакты"
+      },
+      {
+        "role": "heading",
+        "name": "Сайты на ощупь"
+      },
+      {
+        "text": "Скульптура справа поворачивается за вашим курсором. Так же отзываются и мои сайты: клиника, батуты, бюро, детейлинг и ресторан — ниже."
+      },
+      {
+        "role": "link",
+        "name": "Обсудить проект"
+      },
+      {
+        "role": "link",
+        "name": "Смотреть пять работ ↓"
+      }
+    ],
+    "endWaitMs": 16693,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

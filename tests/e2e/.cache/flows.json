@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "flows": {
+    "arch-detailing-restaurant": {
+      "flowId": "arch-detailing-restaurant",
+      "specDigest": "cb45339558b30c1462d395a9a601d4e7348fe9959b7e35212d018ea9f69af6e2",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T17:38:44.777Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "f4a26d403cc888148712e3a23006c85afbe00de744371e8876b9264a477f4033.json",
+        "efdaf94fe2ba9a7625f8815941b26289aa8967536866e0244f57905dc09a6500.json",
+        "93ae184909f39ba0186667b60b27422b1c927e3bc8ca6ca839ff4f1abc2e8457.json",
+        "5a2448e44e977695341627bdec170511c1783d9f357f35e6198236117aec44ca.json",
+        "3a3d0b973b7a3f7e3ddb7f0208153c05930dd3e3132fa33e5bb4a76b0eef70f3.json",
+        "a9b43cc3c6cc0128a605fcc78a2cbc8e3a4119759cb495450e6b7d40e94ca7a5.json",
+        "189c74ba8ca6ad85bc75de21c5aefeb02314aba18c5dcfd5233ef8039adc79a3.json",
+        "538a58fa6daa98b0b5837e9454f3941e75170fa1ba6f952d953fd4d3ca8f92cb.json"
+      ],
+      "ranAfter": [
+        "clinic-booking",
+        "clinic-doctors-filter",
+        "jump-calculator",
+        "music-toggle",
+        "portfolio-to-demo-and-back"
+      ],
+      "ranWith": [
+        "clinic-booking",
+        "clinic-doctors-filter",
+        "jump-calculator",
+        "music-toggle",
+        "portfolio-to-demo-and-back"
+      ],
+      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
+      "visitedPaths": [
+        "/work/architecture",
+        "/work/architecture/dom-na-sklone",
+        "/",
+        "/work/detailing",
+        "/work/restaurant"
+      ],
+      "readOnly": true
+    },
+    "clinic-booking": {
+      "flowId": "clinic-booking",
+      "specDigest": "2594de469d338a79f9ef079079396c9a1b84ea25f14180158537591379c27139",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T17:45:54.554Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "c99e4c901c17e80dcf09ba440e4dbceda5eee475fad3f5f49bdd5bd5215aec6e.json",
+        "ad748740f969b8f440f3d3bfcf3f3f362f5cdec535b53d4715054c2452052541.json",
+        "a729828691fe8d348049c5903be071b621d3afd63066e4a11ce8006fb9df63ae.json",
+        "aa1436c92fd346bf45c750fb25daa09733caa108efc536d412e17227ddef2eeb.json",
+        "b8a9f3dc4f7ef4c0052b3968e6403379c177a380a8e6bf82bbb353cfd56ba90f.json"
+      ],
+      "ranAfter": [
+        "music-toggle",
+        "portfolio-to-demo-and-back"
+      ],
+      "ranWith": [
+        "music-toggle",
+        "portfolio-to-demo-and-back"
+      ],
+      "readOnly": true
+    },
+    "clinic-doctors-filter": {
+      "flowId": "clinic-doctors-filter",
+      "specDigest": "b7fdbd8aa41db12ebdfb9d73e33488a9e9742290e643163af4f95d7490fea968",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T17:38:44.775Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "ffb36a11a0e57e74c5119afac7dfc340ac9ba5a0c7af76713d685c1257ecceae.json",
+        "9d41123afd0c9b52ef85aa4f4e3000980c66cc09d09ce9ffe8c8007a77001f8c.json",
+        "aa955f59ad8ef8edb1c53727dc524796b10d93c32cf7c09a32d8ee821cf87c88.json"
+      ],
+      "ranAfter": [
+        "clinic-booking",
+        "music-toggle",
+        "portfolio-to-demo-and-back"
+      ],
+      "ranWith": [
+        "clinic-booking",
+        "music-toggle",
+        "portfolio-to-demo-and-back"
+      ],
+      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
+      "visitedPaths": [
+        "/work/clinic/doctors",
+        "/work/clinic/prices"
+      ],
+      "readOnly": true
+    },
+    "jump-calculator": {
+      "flowId": "jump-calculator",
+      "specDigest": "6eae8f3dce51929838e636690977e6409898587889c8e29643ff011e4a556ae4",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T17:38:44.776Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "44d8e6e19c0be8e0fc67272ad94212e8b6e401645457e4c20ec8e444cb610e98.json",
+        "8c2cf186cfeca633937ee6a3f4ed4564138dfab6e5d6a31e1bd7d5e2c88722a3.json",
+        "e329cb172cdcb671e750f23d57acefd87e606ef3b99b2d32f385d71bf3c6e816.json"
+      ],
+      "ranAfter": [
+        "clinic-booking",
+        "clinic-doctors-filter",
+        "music-toggle",
+        "portfolio-to-demo-and-back"
+      ],
+      "ranWith": [
+        "clinic-booking",
+        "clinic-doctors-filter",
+        "music-toggle",
+        "portfolio-to-demo-and-back"
+      ],
+      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
+      "visitedPaths": [
+        "/work/jump"
+      ],
+      "readOnly": true
+    },
+    "music-toggle": {
+      "flowId": "music-toggle",
+      "specDigest": "0b778ab17db85cd1323db3820ee1860fa626d0f967d28c7b94c7a6c31a2a41f9",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T17:38:44.767Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "2a71757d7341530b0c6ad11e2be341399a1671d951ab5420e625f68708ba4bb1.json",
+        "6e1bf6de452063c70c5c605c43c16250e98610690052c024cc551ed5f01b8be2.json"
+      ],
+      "ranAfter": [
+        "portfolio-to-demo-and-back"
+      ],
+      "ranWith": [
+        "portfolio-to-demo-and-back"
+      ],
+      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
+      "visitedPaths": [
+        "/"
+      ],
+      "readOnly": true
+    },
+    "portfolio-to-demo-and-back": {
+      "flowId": "portfolio-to-demo-and-back",
+      "specDigest": "b92a8ac0f75f105529b19fcec9f0a4bf2ce0db27b6afd41018cfbc1df352a8ee",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T17:38:44.766Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [
+        "3bc4d8618b74fae55a83e64a68621a4c8e74fcba4818e806768d2180f68fc50b.json",
+        "fd011e1f2deb41cb177f16dcc9b041eb247bcdf156a2305152355b7ea2f44e06.json"
+      ],
+      "noChangeSteps": [
+        0
+      ],
+      "ranAfter": [],
+      "ranWith": [],
+      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
+      "visitedPaths": [
+        "/",
+        "/work/clinic"
+      ],
+      "readOnly": true
+    }
+  }
+}

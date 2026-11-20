@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T17:38:44.686Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap node \"Внедорожник\" in \"01 — Класс автомобиля\"",
+        "target": {
+          "text": "Внедорожник",
+          "within": "01 — Класс автомобиля"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "arch-detailing-restaurant.e2e.ts::arch-detailing-restaurant",
+      "targetId": "web",
+      "instructionDigest": "258d9d4a1306d076eca00a3f8baa66dd69caa4652907fbb7a05461ac9c8619e0",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "Внедорожник is now selected in the service builder, and Седан is no longer selected. The total changed to «Внедорожник · итог» at 65 100 ₽, with «27,5 ч в боксе · 4 дня».",
+    "startPath": "/work/detailing",
+    "endPath": "/work/detailing",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "65 100 ₽, 27,5 ч"
+      },
+      {
+        "role": "radio",
+        "name": "Седан Camry, K5, 3 Series"
+      },
+      {
+        "role": "radio",
+        "name": "Внедорожник Land Cruiser, G-Class, X7",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "text": "Внедорожник · итог"
+      },
+      {
+        "text": "65 100 ₽"
+      },
+      {
+        "text": "27,5 ч в боксе · 4 дня"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "46 500 ₽, 21 ч"
+      },
+      {
+        "role": "radio",
+        "name": "Седан Camry, K5, 3 Series",
+        "states": [
+          "checked"
+        ]
+      },
+      {
+        "role": "radio",
+        "name": "Внедорожник Land Cruiser, G-Class, X7"
+      },
+      {
+        "text": "Седан · итог"
+      },
+      {
+        "text": "46 500 ₽"
+      },
+      {
+        "text": "21 ч в боксе · 3 дня"
+      }
+    ],
+    "endWaitMs": 15402,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

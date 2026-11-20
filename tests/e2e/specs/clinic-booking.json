@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "clinic-booking",
+    "kind": "interactive",
+    "goal": "Book a doctor through every step of the polyclinic booking form",
+    "requirementIndexes": [
+      9,
+      12,
+      32
+    ],
+    "acceptanceCriteriaIndexes": [
+      3
+    ],
+    "startPath": "/work/clinic/booking",
+    "steps": [
+      "Choose the Терапевт specialty and continue",
+      "Choose the first doctor and continue",
+      "Pick the first free time slot and continue",
+      "Submit the contacts step with empty name and phone, which the app rejects",
+      "Enter name Анна Смирнова and phone +7 900 123-45-67 and confirm the booking"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "Терапевт"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Свободное время"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "Подтвердить запись"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "Введите имя"
+      },
+      {
+        "afterStep": 3,
+        "expectText": "Введите номер телефона"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "вы записаны"
+      },
+      {
+        "afterStep": 4,
+        "expectText": "+7 900 123-45-67"
+      }
+    ]
+  }
+}

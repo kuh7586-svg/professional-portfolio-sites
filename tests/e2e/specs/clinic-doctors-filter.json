@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "clinic-doctors-filter",
+    "kind": "interactive",
+    "goal": "Filter doctors by specialty, open a doctor and view prices",
+    "requirementIndexes": [
+      10,
+      11,
+      13
+    ],
+    "acceptanceCriteriaIndexes": [
+      5,
+      2
+    ],
+    "startPath": "/work/clinic/doctors",
+    "steps": [
+      "Select the Кардиолог filter",
+      "Open the first doctor shown",
+      "Open Услуги и цены"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "Кардиолог"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "Кардиолог"
+      },
+      {
+        "afterStep": 2,
+        "expectText": "Цена"
+      }
+    ]
+  }
+}
