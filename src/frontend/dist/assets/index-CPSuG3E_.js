@@ -86860,8 +86860,8 @@ function JumpHome() {
 }
 //#endregion
 //#region src/sites/portfolio/About.tsx
-var EMAIL = "hello@vetrov.studio";
-var TELEGRAM = "vetrov_dev";
+var EMAIL = "dirka111q@gmail.com";
+var TELEGRAM = "terakotacat";
 var FACTS = [
 	{
 		label: "Срок",
@@ -86885,7 +86885,7 @@ function PortfolioAbout() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "about",
 		"data-ocid": "portfolio.about.section",
-		className: "relative z-10 grid gap-12 border-t border-hairline bg-background px-5 py-24 md:grid-cols-12 md:gap-10 md:px-10 md:py-40",
+		className: "relative z-10 grid scroll-mt-16 gap-12 bg-background px-5 py-16 md:scroll-mt-20 md:grid-cols-12 md:gap-10 md:px-10 md:py-24",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 			className: "font-mono text-xs uppercase tracking-[0.2em] text-ink-2 md:col-span-3",
 			children: "Обо мне"
@@ -86953,7 +86953,7 @@ function PortfolioContacts() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "contacts",
 		"data-ocid": "portfolio.contacts.section",
-		className: "relative z-10 overflow-hidden border-t border-hairline bg-background px-5 py-24 md:px-10 md:py-40",
+		className: "relative z-10 scroll-mt-16 overflow-hidden bg-background px-5 py-16 md:scroll-mt-20 md:px-10 md:py-24",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.h2, {
 				className: "origin-left font-display text-4xl leading-[0.95] tracking-tight sm:text-6xl lg:text-8xl",
@@ -87155,91 +87155,98 @@ function PortfolioHero() {
 		id: "top",
 		"data-ocid": "portfolio.hero.section",
 		className: "relative flex min-h-[100svh] flex-col justify-end overflow-hidden px-5 pb-16 pt-24 md:justify-center md:px-10 md:pb-24",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CursorScene, {
-			position: "absolute",
-			create: createSculpture,
-			onFrame: animateSculpture,
-			lighting: LIGHTING_PRESETS.portfolio,
-			offset: [1.75, .05],
-			mobileOffset: [.35, .95],
-			maxTurn: .85,
-			maxTilt: .5
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "relative z-10 max-w-3xl",
-			children: [
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.p, {
-					className: "font-mono text-xs uppercase tracking-[0.2em] text-ink-2",
-					initial: reduced ? false : {
-						opacity: 0,
-						x: -16
-					},
-					animate: {
-						opacity: 1,
-						x: 0
-					},
-					transition: {
-						duration: .8,
-						ease: [
-							.16,
-							1,
-							.3,
-							1
-						]
-					},
-					children: "Фронтенд и 3D · Казань → везде"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(RevealHeadline, {
-					text: ["Сайты", "на ощупь"],
-					variant: "rise",
-					delay: .15,
-					className: "mt-5 font-display text-5xl leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl"
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.p, {
-					className: "mt-6 max-w-md text-base leading-relaxed text-ink-2 md:text-lg",
-					initial: reduced ? false : { opacity: 0 },
-					animate: { opacity: 1 },
-					transition: {
-						duration: 1.2,
-						delay: .7
-					},
-					children: "Скульптура справа поворачивается за вашим курсором. Так же отзываются и мои сайты: клиника, батуты, бюро, детейлинг и ресторан — ниже."
-				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
-					className: "mt-9 flex flex-wrap items-center gap-6",
-					initial: reduced ? false : {
-						opacity: 0,
-						y: 12
-					},
-					animate: {
-						opacity: 1,
-						y: 0
-					},
-					transition: {
-						duration: .8,
-						delay: .9,
-						ease: [
-							.16,
-							1,
-							.3,
-							1
-						]
-					},
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(MagneticButton, {
-						href: "#contacts",
-						"data-ocid": "portfolio.hero.primary_button",
-						children: ["Обсудить проект ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							"aria-hidden": "true",
-							children: "↗"
+		children: [
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CursorScene, {
+				position: "absolute",
+				create: createSculpture,
+				onFrame: animateSculpture,
+				lighting: LIGHTING_PRESETS.portfolio,
+				offset: [1.75, .05],
+				mobileOffset: [.35, .95],
+				maxTurn: .85,
+				maxTilt: .5
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+				"aria-hidden": "true",
+				className: "pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-32 bg-gradient-to-b from-transparent to-background md:h-48"
+			}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				className: "relative z-10 max-w-3xl",
+				children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.p, {
+						className: "font-mono text-xs uppercase tracking-[0.2em] text-ink-2",
+						initial: reduced ? false : {
+							opacity: 0,
+							x: -16
+						},
+						animate: {
+							opacity: 1,
+							x: 0
+						},
+						transition: {
+							duration: .8,
+							ease: [
+								.16,
+								1,
+								.3,
+								1
+							]
+						},
+						children: "Фронтенд и 3D · Казань → везде"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(RevealHeadline, {
+						text: ["Сайты", "на ощупь"],
+						variant: "rise",
+						delay: .15,
+						className: "mt-5 font-display text-5xl leading-[0.95] tracking-tight sm:text-7xl lg:text-8xl"
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.p, {
+						className: "mt-6 max-w-md text-base leading-relaxed text-ink-2 md:text-lg",
+						initial: reduced ? false : { opacity: 0 },
+						animate: { opacity: 1 },
+						transition: {
+							duration: 1.2,
+							delay: .7
+						},
+						children: "Скульптура справа поворачивается за вашим курсором. Так же отзываются и мои сайты: клиника, батуты, бюро, детейлинг и ресторан — ниже."
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+						className: "mt-9 flex flex-wrap items-center gap-6",
+						initial: reduced ? false : {
+							opacity: 0,
+							y: 12
+						},
+						animate: {
+							opacity: 1,
+							y: 0
+						},
+						transition: {
+							duration: .8,
+							delay: .9,
+							ease: [
+								.16,
+								1,
+								.3,
+								1
+							]
+						},
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(MagneticButton, {
+							href: "#contacts",
+							"data-ocid": "portfolio.hero.primary_button",
+							children: ["Обсудить проект ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+								"aria-hidden": "true",
+								children: "↗"
+							})]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+							href: "#works",
+							"data-ocid": "portfolio.hero.works.link",
+							className: "link-draw py-2 text-sm",
+							children: "Смотреть пять работ ↓"
 						})]
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "#works",
-						"data-ocid": "portfolio.hero.works.link",
-						className: "link-draw py-2 text-sm",
-						children: "Смотреть пять работ ↓"
-					})]
-				})
-			]
-		})]
+					})
+				]
+			})
+		]
 	});
 }
 //#endregion
@@ -87561,7 +87568,7 @@ function WorkRow({ site, index }) {
 			onPointerLeave: () => setHovered(false),
 			onFocus: () => setHovered(true),
 			onBlur: () => setHovered(false),
-			className: "group grid grid-cols-[3rem_1fr] gap-x-4 py-10 focus-visible:outline-none md:grid-cols-[8rem_1fr] md:gap-x-8 md:py-14",
+			className: "group grid grid-cols-[3rem_1fr] gap-x-4 py-6 focus-visible:outline-none md:grid-cols-[8rem_1fr] md:gap-x-8 md:py-8",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 				className: "font-display text-2xl leading-none text-ink-2 transition-colors duration-500 group-data-[active=true]:text-primary md:text-5xl",
 				children: num
@@ -87592,12 +87599,13 @@ function WorkRow({ site, index }) {
 						]
 					}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
-						className: "@container relative mt-6 aspect-[4/3] overflow-hidden border border-hairline group-focus-visible:ring-2 group-focus-visible:ring-ring md:mt-8 md:aspect-[21/9]",
+						className: "@container relative mt-4 aspect-[4/3] overflow-hidden border border-hairline bg-muted group-focus-visible:ring-2 group-focus-visible:ring-ring md:mt-5 md:aspect-[21/9]",
 						initial: reduced ? false : { clipPath: "inset(0% 0% 100% 0%)" },
 						whileInView: { clipPath: "inset(0% 0% 0% 0%)" },
 						viewport: {
 							once: true,
-							amount: .2
+							amount: .05,
+							margin: "0px 0px -10% 0px"
 						},
 						transition: {
 							duration: 1.1,
@@ -87636,9 +87644,9 @@ function PortfolioWorks() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		id: "works",
 		"data-ocid": "portfolio.works.section",
-		className: "relative z-10 bg-background px-5 py-24 md:px-10 md:py-40",
+		className: "relative z-10 bg-background scroll-mt-16 px-5 pt-16 pb-8 md:scroll-mt-20 md:px-10 md:pt-24 md:pb-12",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-			className: "mb-10 flex items-end justify-between gap-6 md:mb-16",
+			className: "mb-8 flex items-end justify-between gap-6 md:mb-10",
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
 				className: "font-display text-3xl leading-[0.95] tracking-tight md:text-5xl",
 				children: "Пять работ"
@@ -87648,7 +87656,6 @@ function PortfolioWorks() {
 			})]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
 			"data-ocid": "portfolio.works.list",
-			className: "border-b border-hairline",
 			children: works.map((site, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(WorkRow, {
 				site,
 				index: i

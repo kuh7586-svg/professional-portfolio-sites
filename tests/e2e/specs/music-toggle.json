@@ -4,14 +4,8 @@
     "id": "music-toggle",
     "kind": "interactive",
     "goal": "Turn the real background track on and off and see its credit",
-    "requirementIndexes": [
-      6,
-      7,
-      8
-    ],
-    "acceptanceCriteriaIndexes": [
-      6
-    ],
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
     "steps": [
       "Press the Музыка button",
       "Press the Музыка button again"

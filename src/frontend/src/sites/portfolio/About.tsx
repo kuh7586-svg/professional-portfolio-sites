@@ -2,8 +2,8 @@ import { Magnetic, MusicCredit, Parallax } from "@/components/shared";
 import { motion, useReducedMotion } from "motion/react";
 import { useState } from "react";
 
-const EMAIL = "hello@vetrov.studio";
-const TELEGRAM = "vetrov_dev";
+const EMAIL = "dirka111q@gmail.com";
+const TELEGRAM = "terakotacat";
 
 const FACTS = [
   { label: "Срок", value: "4–8 недель от созвона до запуска" },
@@ -18,7 +18,7 @@ export function PortfolioAbout() {
     <section
       id="about"
       data-ocid="portfolio.about.section"
-      className="relative z-10 grid gap-12 border-t border-hairline bg-background px-5 py-24 md:grid-cols-12 md:gap-10 md:px-10 md:py-40"
+      className="relative z-10 grid scroll-mt-16 gap-12 bg-background px-5 py-16 md:scroll-mt-20 md:grid-cols-12 md:gap-10 md:px-10 md:py-24"
     >
       <p className="font-mono text-xs uppercase tracking-[0.2em] text-ink-2 md:col-span-3">
         Обо мне
@@ -80,7 +80,7 @@ export function PortfolioContacts() {
     <section
       id="contacts"
       data-ocid="portfolio.contacts.section"
-      className="relative z-10 overflow-hidden border-t border-hairline bg-background px-5 py-24 md:px-10 md:py-40"
+      className="relative z-10 scroll-mt-16 overflow-hidden bg-background px-5 py-16 md:scroll-mt-20 md:px-10 md:py-24"
     >
       <motion.h2
         className="origin-left font-display text-4xl leading-[0.95] tracking-tight sm:text-6xl lg:text-8xl"

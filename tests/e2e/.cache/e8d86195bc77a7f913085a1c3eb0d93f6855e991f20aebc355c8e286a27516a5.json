@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-20T18:08:48.363Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap link \"в портфолио\"",
+        "target": {
+          "role": "link",
+          "name": "в портфолио"
+        }
+      }
+    ],
+    "executor": {
+      "name": "e2e-default-agent",
+      "version": "2"
+    },
+    "recordedFor": {
+      "testId": "portfolio-to-demo-and-back.e2e.ts::portfolio-to-demo-and-back",
+      "targetId": "web",
+      "instructionDigest": "063578a230396ae362137a8cf9ff1a0fe1530db786b76343c48cae83ad5f7f6d",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "recordedBy": {
+      "provider": "anthropic.messages",
+      "model": "claude-opus-5-5"
+    },
+    "summary": "I pressed «в портфолио» on the clinic demo, and the app went back to the portfolio home at /. The page shows the «Сайты на ощупь» hero, the «Пять работ» list and the contacts section.",
+    "startPath": "/work/clinic",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "link",
+        "name": "Алексей Ветров"
+      },
+      {
+        "role": "link",
+        "name": "Работы"
+      },
+      {
+        "role": "link",
+        "name": "Обо мне"
+      },
+      {
+        "role": "link",
+        "name": "Контакты"
+      },
+      {
+        "role": "heading",
+        "name": "Сайты на ощупь"
+      },
+      {
+        "text": "Скульптура справа поворачивается за вашим курсором. Так же отзываются и мои сайты: клиника, батуты, бюро, детейлинг и ресторан — ниже."
+      },
+      {
+        "role": "link",
+        "name": "Обсудить проект"
+      },
+      {
+        "role": "link",
+        "name": "Смотреть пять работ ↓"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "text": "в портфолио"
+      },
+      {
+        "role": "link",
+        "name": "Тихий пульс"
+      },
+      {
+        "role": "link",
+        "name": "Главная"
+      },
+      {
+        "role": "link",
+        "name": "Врачи"
+      },
+      {
+        "role": "link",
+        "name": "Услуги и цены"
+      },
+      {
+        "role": "link",
+        "name": "Запись"
+      },
+      {
+        "role": "link",
+        "name": "+7 (812) 000-00-00"
+      },
+      {
+        "text": "Поликлиника на Малой Садовой · с 2009 года"
+      }
+    ],
+    "endWaitMs": 15503,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "403fcccf39e2650a7e389bda5a9246bfe8c725769a98b3a749be67a096c16423",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "aec5acc8a8d7ba14d388c35095196d67ae7ad7199ff1168a3230addcf190cf8d",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

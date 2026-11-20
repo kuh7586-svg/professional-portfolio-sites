@@ -4,16 +4,8 @@
     "id": "jump-calculator",
     "kind": "interactive",
     "goal": "Change the trampoline ticket calculator inputs and see the total update",
-    "requirementIndexes": [
-      14,
-      15,
-      16,
-      17
-    ],
-    "acceptanceCriteriaIndexes": [
-      4,
-      2
-    ],
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
     "startPath": "/work/jump",
     "steps": [
       "Increase the number of adults by one in the ticket calculator",

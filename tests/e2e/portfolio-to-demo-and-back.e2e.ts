@@ -1,6 +1,6 @@
-// Generated from tests/e2e/specs/portfolio-to-demo-and-back.json (spec b92a8ac0f75f1055). Edit the spec, not this file.
+// Generated from tests/e2e/specs/portfolio-to-demo-and-back.json (spec b2afdb859d74c846). Edit the spec, not this file.
 import { test } from "@e2e-dev/web";
-import type { Agent, Locator, Screen } from "e2e";
+import type { Locator, Screen } from "e2e";
 import { expect } from "e2e";
 
 /** Steps this flow's recording found already done; strict replay skips them, as they have nothing to replay. */
@@ -36,15 +36,6 @@ function flowChecks() {
       failed += 1;
       expect.soft(false, `check ${String(index)}`).toBe(true);
     },
-    /** A prose judgment recorded in the report as evidence; it never fails the test and runs only while recording with no failed check. */
-    async advise(agent: Agent, assertion: string): Promise<void> {
-      if (!recording || failed > 0) return;
-      try {
-        await agent.assert(assertion);
-      } catch {
-        return;
-      }
-    },
   };
 }
 
@@ -73,15 +64,15 @@ test("portfolio-to-demo-and-back", async ({ app, agent, screen }) => {
   const flow = flowChecks();
   await app.open("/");
 
-  if (!skippedSteps.includes(0)) await agent.act("Press Смотреть пять работ\nDo not do the next step yet: Open the Поликлиника work", { maxModelCalls: 20 });
-  await flow.check(0, async () => { await expect(await shownText(screen, "Поликлиника")).toBeVisible({ timeout: 15000 }); }, async () => (await shownText(screen, "Поликлиника")).isVisible());
-  await flow.check(1, async () => { await expect(await shownText(screen, "Ресторан")).toBeVisible({ timeout: 15000 }); }, async () => (await shownText(screen, "Ресторан")).isVisible());
-  await flow.check(2, async () => { await expect(await shownText(screen, "hello@vetrov.studio")).toBeVisible({ timeout: 15000 }); }, async () => (await shownText(screen, "hello@vetrov.studio")).isVisible());
+  if (!skippedSteps.includes(0)) await agent.act("Press Смотреть пять работ\nDo not do the next step yet: Press Клиника «Тихий пульс»", { maxModelCalls: 20 });
+  await flow.check(0, async () => { await expect(await shownText(screen, "Пять работ", true)).toBeVisible({ timeout: 15000 }); }, async () => (await shownText(screen, "Пять работ", true)).isVisible());
+  await flow.check(1, async () => { await expect(await shownText(screen, "Поликлиника")).toBeVisible({ timeout: 15000 }); }, async () => (await shownText(screen, "Поликлиника")).isVisible());
+  await flow.check(2, async () => { await expect(await shownText(screen, "dirka111q@gmail.com")).toBeVisible({ timeout: 15000 }); }, async () => (await shownText(screen, "dirka111q@gmail.com")).isVisible());
 
-  if (!skippedSteps.includes(1)) await agent.act("Open the Поликлиника work\nDo not do the next step yet: Press ← в портфолио", { maxModelCalls: 20 });
-  await flow.check(3, async () => { await expect(await shownText(screen, "← в портфолио")).toBeVisible(); }, async () => (await shownText(screen, "← в портфолио")).isVisible());
-  await flow.advise(agent, "A 3D model is visible in the background of the first screen and headlines fit inside the screen width");
+  if (!skippedSteps.includes(1)) await agent.act("Press Клиника «Тихий пульс»\nDo not do the next step yet: Press в портфолио", { maxModelCalls: 20 });
+  await flow.check(3, async () => { await expect(await shownText(screen, "Врач, у которого есть время на вас")).toBeVisible(); }, async () => (await shownText(screen, "Врач, у которого есть время на вас")).isVisible());
+  await flow.check(4, async () => { await expect(await shownText(screen, "в портфолио")).toBeVisible(); }, async () => (await shownText(screen, "в портфолио")).isVisible());
 
-  if (!skippedSteps.includes(2)) await agent.act("Press ← в портфолио", { maxModelCalls: 20 });
-  await flow.check(5, async () => { await expect(await shownText(screen, "Сайты на ощупь")).toBeVisible(); }, async () => (await shownText(screen, "Сайты на ощупь")).isVisible());
+  if (!skippedSteps.includes(2)) await agent.act("Press в портфолио", { maxModelCalls: 20 });
+  await flow.check(5, async () => { await expect(await shownText(screen, "Пять работ")).toBeVisible(); }, async () => (await shownText(screen, "Пять работ")).isVisible());
 });

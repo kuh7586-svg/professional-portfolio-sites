@@ -75,7 +75,7 @@ function WorkRow({ site, index }: { site: SiteInfo; index: number }) {
         onPointerLeave={() => setHovered(false)}
         onFocus={() => setHovered(true)}
         onBlur={() => setHovered(false)}
-        className="group grid grid-cols-[3rem_1fr] gap-x-4 py-10 focus-visible:outline-none md:grid-cols-[8rem_1fr] md:gap-x-8 md:py-14"
+        className="group grid grid-cols-[3rem_1fr] gap-x-4 py-6 focus-visible:outline-none md:grid-cols-[8rem_1fr] md:gap-x-8 md:py-8"
       >
         <span className="font-display text-2xl leading-none text-ink-2 transition-colors duration-500 group-data-[active=true]:text-primary md:text-5xl">
           {num}
@@ -93,10 +93,10 @@ function WorkRow({ site, index }: { site: SiteInfo; index: number }) {
             {meta.type} <span aria-hidden="true">·</span> {meta.stack}
           </p>
           <motion.div
-            className="@container relative mt-6 aspect-[4/3] overflow-hidden border border-hairline group-focus-visible:ring-2 group-focus-visible:ring-ring md:mt-8 md:aspect-[21/9]"
+            className="@container relative mt-4 aspect-[4/3] overflow-hidden border border-hairline bg-muted group-focus-visible:ring-2 group-focus-visible:ring-ring md:mt-5 md:aspect-[21/9]"
             initial={reduced ? false : { clipPath: "inset(0% 0% 100% 0%)" }}
             whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.05, margin: "0px 0px -10% 0px" }}
             transition={{ duration: 1.1, ease: [0.76, 0, 0.24, 1] }}
           >
             <div className="absolute inset-0 opacity-40 grayscale">
@@ -124,9 +124,9 @@ export function PortfolioWorks() {
     <section
       id="works"
       data-ocid="portfolio.works.section"
-      className="relative z-10 bg-background px-5 py-24 md:px-10 md:py-40"
+      className="relative z-10 bg-background scroll-mt-16 px-5 pt-16 pb-8 md:scroll-mt-20 md:px-10 md:pt-24 md:pb-12"
     >
-      <div className="mb-10 flex items-end justify-between gap-6 md:mb-16">
+      <div className="mb-8 flex items-end justify-between gap-6 md:mb-10">
         <h2 className="font-display text-3xl leading-[0.95] tracking-tight md:text-5xl">
           Пять работ
         </h2>
@@ -134,7 +134,7 @@ export function PortfolioWorks() {
           Превью оживает в палитре своего сайта. Клик открывает демо целиком.
         </p>
       </div>
-      <ul data-ocid="portfolio.works.list" className="border-b border-hairline">
+      <ul data-ocid="portfolio.works.list">
         {works.map((site, i) => (
           <WorkRow key={site.id} site={site} index={i} />
         ))}

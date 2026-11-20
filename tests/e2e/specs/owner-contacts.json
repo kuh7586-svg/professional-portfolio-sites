@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "spec": {
+    "id": "owner-contacts",
+    "kind": "interactive",
+    "goal": "The main page shows the new email and Telegram contacts",
+    "requirementIndexes": [
+      0
+    ],
+    "acceptanceCriteriaIndexes": [
+      0
+    ],
+    "steps": [
+      "Press Контакты in the top navigation",
+      "Press Скопировать"
+    ],
+    "checks": [
+      {
+        "afterStep": 0,
+        "expectText": "dirka111q@gmail.com"
+      },
+      {
+        "afterStep": 0,
+        "expectText": "@terakotacat"
+      },
+      {
+        "afterStep": 1,
+        "expectText": "dirka111q@gmail.com"
+      }
+    ]
+  }
+}

@@ -68,6 +68,10 @@ export function PortfolioHero() {
         maxTurn={0.85}
         maxTilt={0.5}
       />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-[1] h-32 bg-gradient-to-b from-transparent to-background md:h-48"
+      />
       <div className="relative z-10 max-w-3xl">
         <motion.p
           className="font-mono text-xs uppercase tracking-[0.2em] text-ink-2"

@@ -57,29 +57,28 @@
       ],
       "last": "passed"
     },
+    "owner-contacts": {
+      "plan": [
+        "3a751401cac0c3c7",
+        "82908ee3bfd35400"
+      ],
+      "last": "passed"
+    },
     "portfolio-to-demo-and-back": {
       "plan": [
-        "0616e8a2528ca9fb",
-        "34de4797d521c8e4",
-        "35fc0abca6ddc9bc",
-        "3dcd4ede23c415c2",
-        "4477ce5c94c39590",
-        "a58038dcecc58481",
-        "ab9dc905c47e1be2",
-        "b7a93a8203e20d5c",
-        "bea3bc69a0750214",
-        "e5e46f6ba664a315",
-        "f6d54712db9966c5"
+        "3a751401cac0c3c7",
+        "70601742db02ec02"
       ],
       "last": "passed"
     }
   },
   "order": [
-    "portfolio-to-demo-and-back",
     "music-toggle",
     "clinic-booking",
     "clinic-doctors-filter",
     "jump-calculator",
-    "arch-detailing-restaurant"
+    "arch-detailing-restaurant",
+    "owner-contacts",
+    "portfolio-to-demo-and-back"
   ]
 }

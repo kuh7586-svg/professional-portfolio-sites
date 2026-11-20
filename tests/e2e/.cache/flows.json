@@ -21,17 +21,15 @@
         "clinic-booking",
         "clinic-doctors-filter",
         "jump-calculator",
-        "music-toggle",
-        "portfolio-to-demo-and-back"
+        "music-toggle"
       ],
       "ranWith": [
         "clinic-booking",
         "clinic-doctors-filter",
         "jump-calculator",
-        "music-toggle",
-        "portfolio-to-demo-and-back"
+        "music-toggle"
       ],
-      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
+      "passedTree": "a97769fdce574fe12a66c8327be3de169ebac647",
       "visitedPaths": [
         "/work/architecture",
         "/work/architecture/dom-na-sklone",
@@ -55,12 +53,14 @@
         "b8a9f3dc4f7ef4c0052b3968e6403379c177a380a8e6bf82bbb353cfd56ba90f.json"
       ],
       "ranAfter": [
-        "music-toggle",
-        "portfolio-to-demo-and-back"
+        "music-toggle"
       ],
       "ranWith": [
-        "music-toggle",
-        "portfolio-to-demo-and-back"
+        "music-toggle"
+      ],
+      "passedTree": "a97769fdce574fe12a66c8327be3de169ebac647",
+      "visitedPaths": [
+        "/work/clinic/booking"
       ],
       "readOnly": true
     },
@@ -77,15 +77,13 @@
       ],
       "ranAfter": [
         "clinic-booking",
-        "music-toggle",
-        "portfolio-to-demo-and-back"
+        "music-toggle"
       ],
       "ranWith": [
         "clinic-booking",
-        "music-toggle",
-        "portfolio-to-demo-and-back"
+        "music-toggle"
       ],
-      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
+      "passedTree": "a97769fdce574fe12a66c8327be3de169ebac647",
       "visitedPaths": [
         "/work/clinic/doctors",
         "/work/clinic/prices"
@@ -106,16 +104,14 @@
       "ranAfter": [
         "clinic-booking",
         "clinic-doctors-filter",
-        "music-toggle",
-        "portfolio-to-demo-and-back"
+        "music-toggle"
       ],
       "ranWith": [
         "clinic-booking",
         "clinic-doctors-filter",
-        "music-toggle",
-        "portfolio-to-demo-and-back"
+        "music-toggle"
       ],
-      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
+      "passedTree": "a97769fdce574fe12a66c8327be3de169ebac647",
       "visitedPaths": [
         "/work/jump"
       ],
@@ -131,13 +127,28 @@
         "2a71757d7341530b0c6ad11e2be341399a1671d951ab5420e625f68708ba4bb1.json",
         "6e1bf6de452063c70c5c605c43c16250e98610690052c024cc551ed5f01b8be2.json"
       ],
-      "ranAfter": [
-        "portfolio-to-demo-and-back"
+      "ranAfter": [],
+      "ranWith": [],
+      "passedTree": "a97769fdce574fe12a66c8327be3de169ebac647",
+      "visitedPaths": [
+        "/"
       ],
-      "ranWith": [
-        "portfolio-to-demo-and-back"
+      "readOnly": true
+    },
+    "owner-contacts": {
+      "flowId": "owner-contacts",
+      "specDigest": "d74d097d35a13b477fb564d7e221652ec5d6e64345f210011ba5a866f89c092e",
+      "status": "recorded",
+      "recordedAt": "2026-11-20T18:07:18.202Z",
+      "recordedBy": "claude-opus-5-5",
+      "entries": [],
+      "noChangeSteps": [
+        0,
+        1
       ],
-      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
+      "ranAfter": [],
+      "ranWith": [],
+      "passedTree": "c20dbe870c5d3113f976dceb20cfc4277d6783f6",
       "visitedPaths": [
         "/"
       ],
@@ -145,23 +156,22 @@
     },
     "portfolio-to-demo-and-back": {
       "flowId": "portfolio-to-demo-and-back",
-      "specDigest": "b92a8ac0f75f105529b19fcec9f0a4bf2ce0db27b6afd41018cfbc1df352a8ee",
+      "specDigest": "b2afdb859d74c846614f52181d233dfccde793250e4daf04e980284a24dd52fa",
       "status": "recorded",
-      "recordedAt": "2026-11-20T17:38:44.766Z",
+      "recordedAt": "2026-11-20T18:08:48.436Z",
       "recordedBy": "claude-opus-5-5",
       "entries": [
-        "3bc4d8618b74fae55a83e64a68621a4c8e74fcba4818e806768d2180f68fc50b.json",
-        "fd011e1f2deb41cb177f16dcc9b041eb247bcdf156a2305152355b7ea2f44e06.json"
+        "31199a8ba69173222cbfb593b716d5b75a9984f19e781098c8a72a8b09894f24.json",
+        "e8d86195bc77a7f913085a1c3eb0d93f6855e991f20aebc355c8e286a27516a5.json"
       ],
       "noChangeSteps": [
         0
       ],
-      "ranAfter": [],
-      "ranWith": [],
-      "passedTree": "f1aa9c4bdf9f4cf2746ed2f23862cbf60a3d6c32",
-      "visitedPaths": [
-        "/",
-        "/work/clinic"
+      "ranAfter": [
+        "owner-contacts"
+      ],
+      "ranWith": [
+        "owner-contacts"
       ],
       "readOnly": true
     }

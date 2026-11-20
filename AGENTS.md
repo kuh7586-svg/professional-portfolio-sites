@@ -31,3 +31,5 @@
 
 - Clinic booking flow: after choosing a doctor the screen shows 'Свободное время', the contacts step button is 'Подтвердить запись', empty-field errors start with 'Введите имя' / 'Введите номер телефона', success heading ends with 'вы записаны'.
 - E2E flows with startPath need explicit steps and checks in every pre_commit_checks contract; avoid bare currency-symbol checks.
+- Owner contacts live in src/frontend/src/sites/portfolio/About.tsx as EMAIL='dirka111q@gmail.com' and TELEGRAM='terakotacat' (JSX adds @).
+- Clinic demo home heading is 'Врач, у которого есть время на вас'; demo sites link back with 'в портфолио'. The 'Скопировано' copy label is transient, so do not check it in e2e.

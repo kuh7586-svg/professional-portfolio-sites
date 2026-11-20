@@ -4,14 +4,8 @@
     "id": "clinic-booking",
     "kind": "interactive",
     "goal": "Book a doctor through every step of the polyclinic booking form",
-    "requirementIndexes": [
-      9,
-      12,
-      32
-    ],
-    "acceptanceCriteriaIndexes": [
-      3
-    ],
+    "requirementIndexes": [],
+    "acceptanceCriteriaIndexes": [],
     "startPath": "/work/clinic/booking",
     "steps": [
       "Choose the Терапевт specialty and continue",
